@@ -1,0 +1,39 @@
+
+
+let array = JSON.parse(localstorage.getItem("order"));
+
+let unique = [...new Map (array.map(item=> [item["id"],item])).values()];
+console.log(array);
+console.log(unique);
+
+if(array == null){
+    let show = document.getElementById("cart");
+    show.innerHTML = "Cart is Empty!";
+}else{
+    let show =document.getElementById("cart");
+
+    let prod = "";
+    let count = 0;
+
+    unique.forEach(
+    function (item){
+
+        count = array.filter(existing).length;
+
+        function existing (itemz){
+            return itemz.id == item.id;
+        }
+
+            prod+= `<li>${item.product}---${item.price}---${count}
+            </li>`
+    })
+    show.innerHTML = prod;
+}
+
+
+let sample = [1,1,2,2,3,4];
+
+
+
+let uniquesample = [... new Set(sample)];
+
