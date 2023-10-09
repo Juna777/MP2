@@ -1,4 +1,8 @@
-
+let logs = sessionStorage.getItem("login");
+  if((logs == null) || (logs == "")){
+    alert ("Please log-in first!");
+    location.replace("login.html");
+  }else{
 
 let array = JSON.parse(localstorage.getItem("order"));
 
@@ -24,16 +28,12 @@ if(array == null){
             return itemz.id == item.id;
         }
 
-            prod+= `<li>${item.product}---${item.price}---${count}
-            </li>`
+            prod+= `<li>${item.product}---${item.price}---${count}</li>`;
     })
     show.innerHTML = prod;
-}
-
+    }
+  }
 
 let sample = [1,1,2,2,3,4];
-
-
-
 let uniquesample = [... new Set(sample)];
 

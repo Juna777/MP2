@@ -56,6 +56,12 @@ fetch(url)
 
 
 function addOrder(id) {
+  let logs = sessionStorage.getItem("login");
+  if((logs == null) || (logs == "")){
+    alert ("Please log-in first!");
+    location.replace("login.html");
+  }else{
+
   let array = localstorage.getItem("order");
   console.log(array);
 
@@ -67,6 +73,8 @@ function addOrder(id) {
     orderlist.push({ id: new_id, product: new_prod, price: new_price });
     localStorage.setItem("order", JSON.stringify(orderlist));
     cartlength();
+
+
   } else {
     let orderlist = JSON.parse(localstorage.getItem("order"));
     let new_id = document.getElementById("p" + id).innerText;
@@ -75,6 +83,7 @@ function addOrder(id) {
     orderlist.push({ id: new_id, product: new_prod, price: new_price });
     localStorage.setItem("order", JSON.stringify(orderlist));
     cartlength();
+   }
   }
 }
 
