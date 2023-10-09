@@ -12,15 +12,15 @@
 <body class="container-fluid" style=" background-image: url(img/log-in.png);
 background-repeat: no-repeat;background-size: cover;">
 <nav>
-    <a href="index.html"><img src="img/logo.png" width="150px" height="150px"></a>
+    <a href="index.html"><img src="img/logo.png" width="200px" height="200px"></a>
 </nav>
 <center>
-        <div class="mb-3">
+        <div class="logincard mb-3">
             <br><br>
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-md-8">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="card-body">
                         <form class="login_form" action="index.html" method="get" name="form" onsubmit="return validated()">
                             <h4>Please Log-in<img src="img/logo.png" width="50px" height="50px"></h4> <br>
@@ -28,7 +28,7 @@ background-repeat: no-repeat;background-size: cover;">
                             <div id="email_error">Please type your username</div>
                             <br>
                             <div class="font font2"></div>
-                            <input id="password" type="password" name="password" style="border-radius: 5px;width: 100%;" placeholder="8 or more letters and numbers">
+                            <input id="password" type="password" name="password" style="border-radius: 5px;width: 100%;" placeholder="8 or more letter/s and number/s combination">
                             <div id="password_error">Please type your password</div>
                             <br><br>
                             <button onclick="login()" type="submit" style="border-radius: 5px; width: 100%;background-color: #63ada8">Login</button>
@@ -38,7 +38,13 @@ background-repeat: no-repeat;background-size: cover;">
             </div> 
           </div>
           </center>
-          <br><br>s
+          <br><br><br>
+          <footer class="container">
+            <h6>@2023 ShapeShifters.com All rights reserved. <br>
+              Privacy Policy Terms of Service
+            </h6>
+          </footer>
+          <br><br>
 <script src="login.js"></script>
 </body>
 </html>
