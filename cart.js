@@ -1,10 +1,12 @@
+
+
 let logs = sessionStorage.getItem("login");
   if((logs == null) || (logs == "")){
     alert ("Please log-in first!");
     location.replace("login.html");
   }else{
 
-let array = JSON.parse(localstorage.getItem("order"));
+let array = JSON.parse(localStorage.getItem("order"));
 
 let unique = [...new Map (array.map(item=> [item["id"],item])).values()];
 console.log(array);
@@ -34,6 +36,4 @@ if(array == null){
     }
   }
 
-let sample = [1,1,2,2,3,4];
-let uniquesample = [... new Set(sample)];
 

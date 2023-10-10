@@ -1,0 +1,63 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    background-color: #bed3d2;
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .navbar a:hover {
+    background-color: #63ada8;
+    color: black;
+  }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bed3d2;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px rgb(55, 143, 146);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 10px;
+}
